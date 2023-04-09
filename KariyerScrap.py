@@ -1,9 +1,6 @@
 from requests import get
 from bs4 import BeautifulSoup as bs
-import jpype
 import pandas as pd
-import openpyxl
-import asposecells
 import requests
 
 try:
@@ -34,21 +31,8 @@ try:
 
     liste = pd.DataFrame(liste, columns=(["İlan Url", "Başlık", "Firma", "Lokasyon", "İşleyiş", "Tecrübe"]))
     liste.to_excel("İlanlar.xlsx", sheet_name="ilan", index=False)
-
-    jpype.startJVM()
-    from asposecells.api import Workbook
-    wb = Workbook("İlanlar.xlsx")
-    worksheet = wb.getWorksheets().get(0)
-    for i in range(6):
-        worksheet.autoFitColumn(i)
-    wb.save("İlanlar.xlsx")
-
-    wb = openpyxl.load_workbook('İlanlar.xlsx')
-    wb.sheetnames
-    std=wb['Evaluation Warning']
-    wb.remove(std)
-    wb.save('İlanlar.xlsx')
     print("Başarıyla excel'e aktarıldı :)")
+
 except:
     print("Url'yi kontrol ediniz!")
 
