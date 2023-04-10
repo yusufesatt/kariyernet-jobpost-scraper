@@ -1,5 +1,7 @@
 # Proje Hakkında Bilgi
-Bu proje python ve çeşitli kütüphaneler kullanılarak yazılmıştır. Proje Kariyer.net Sitesi üzerinden aranan ilan kategorisi linkinden ilan linkleri, başlıkları, firmaları, lokasyonu, işleyişi ve tecrübe verilerini çeker.
+Kariyer.net üzerindeki aranan ilan kategorisindeki ilk sayfadaki ilanların linki, başlık, firma, lokasyon ve tecrübe kriterlerini toplayarak bir Excel tablosuna aktaran Python projesi. Proje, BeautifulSoup ve requests modüllerini kullanarak web sayfasından verileri kazıyor ve pandas modülü ile Excel tablosuna aktarıyor. Kullanıcı tarafından istenen sayıda ilanın verileri otomatik olarak toplanabilir. Bu proje, Kariyer.net gibi iş arama sitelerinde iş arayanlar için zaman kazandıran bir araç olarak kullanılabilir.
+
+[Programın çıktısına göz atmak için tıklayınız.](https://prnt.sc/QJaaxp-vjcm7)
 
 ## Kurulum Adımları ve Gereksinimler
 
@@ -24,4 +26,3 @@ python KariyerScrap.py
 
 [requests](https://github.com/psf/requests)
 
-[AsposeCells](https://github.com/aspose-cells/Aspose.Cells-for-Python-via-.NET)
