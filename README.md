@@ -1,28 +1,52 @@
-# Proje Hakkında Bilgi
-Kariyer.net üzerindeki aranan ilan kategorisindeki ilk sayfadaki ilanların linki, başlık, firma, lokasyon ve tecrübe kriterlerini toplayarak bir Excel tablosuna aktaran Python projesi. Proje, BeautifulSoup ve requests modüllerini kullanarak web sayfasından verileri kazıyor ve pandas modülü ile Excel tablosuna aktarıyor. Kullanıcı tarafından istenen sayıda ilanın verileri otomatik olarak toplanabilir. Bu proje, Kariyer.net gibi iş arama sitelerinde iş arayanlar için zaman kazandıran bir araç olarak kullanılabilir.
+# Fetching Kariyer.net Job postings.
 
-[Programın çıktısına göz atmak için tıklayınız.](https://prnt.sc/QJaaxp-vjcm7)
+This project collects the link, title, company, location and experience criteria of the ads in the wanted ads category on Kariyer.net and transfers them to an Excel spreadsheet.
 
-## Kurulum Adımları ve Gereksinimler
+As an advantage, this project allows users to find a job more easily or employers to compare the criteria of other employers.
 
-Python 3
+[Click here to see the sample output.](https://prnt.sc/QJaaxp-vjcm7)
 
-pip
+## Installation
 
-## Programı İndirip Çalıştırma 
+1. Clone the repository:
 
+```bash
+git clone https://github.com/yusufesatt/kariyernet-jobpost-scraper.git
+
+cd kariyernet-jobpost-scraper
 ```
-git clone https://github.com/Spyzah/Kariyer.Net-Ilan-Scraping.git
-cd KariyerScrap
+
+2. Create Virtualenv **(Optional)**:
+
+```bash
+python -m venv kariyernet_env
+
+# Ubuntu & MacOS
+source kariyernet_env/bin/activate
+
+# Windows
+kariyernet_env/Scripts/activate
+```
+
+3. Install the required dependencies:
+
+```bash 
 pip install -r requirements.txt
+```
+
+## Usage
+
+The whole process will take place in one line 
+
+```bash
 python KariyerScrap.py
 ```
 
-### Kullanılan Kütüphaneler
+## Contributing
 
-[BeautifulSoup](https://github.com/wention/BeautifulSoup4)
+If you encounter issues or have suggestions for improvements, please report them on the GitHub repository 🚀.
 
-[Pandas](https://github.com/pandas-dev/pandas)
+## License
 
-[requests](https://github.com/psf/requests)
+This project is licensed under the [MIT License](https://github.com/yusufesatt/kariyernet-jobpost-scraper/?tab=MIT-1-ov-file).
 
